@@ -2,14 +2,14 @@ import javax.swing.JFrame;
 
 
 public class Main {
-
+	public static Pantalla screen = new Pantalla();
 	public static void main(String[] args) {
 		// Create a new frame (a window)
 				JFrame frame = new JFrame();
 				frame.setTitle("Tarea 1");
 				
 				//creando observador
-				Pantalla screen = new Pantalla();
+				
 				
 				//creando sujetos a observar
 				Boton btn1 = new Boton("amarillo");

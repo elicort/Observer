@@ -1,8 +1,8 @@
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
-
 public class Boton {
 	public JButton boton;
 	private String color;
@@ -19,12 +19,15 @@ public void pintarPantalla() {
 		public void actionPerformed(ActionEvent arg0) {
 			if(color=="amarillo") {
 				System.out.println("amarillo");
+				Main.screen.setBackground(Color.YELLOW);
 			}
 			if(color=="azul") {
 				System.out.println("azul");
+				Main.screen.setBackground(Color.BLUE);
 			}
 			if(color=="rojo") {
 				System.out.println("rojo");
+				Main.screen.setBackground(Color.RED);
 			}
 			
 		}
